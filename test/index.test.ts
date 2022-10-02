@@ -15,7 +15,7 @@ describe('CortexDatabase Test Suite', () => {
   });
 
   it('get undefined after clearing store', () => {
-    db.clear()
+    db.clear();
     expect(db.get('obj')).toBe(undefined);
     expect(db.get('my-key')).toBe(undefined);
   });
